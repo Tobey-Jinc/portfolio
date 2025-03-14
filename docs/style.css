@@ -1,81 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 :root {
-    --orange: rgb(255, 102, 0);
-    --dark-grey: rgb(32, 32, 32);
-    --background: black;
+    --background: rgb(24, 24, 24);
 }
 
 body {
     background-color: var(--background);
+    max-width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+
+    color: rgb(214, 214, 214);
     font-family: "Kanit", serif;
 }
 
-.navbar {
-    margin: 20px 20px 20px 0px;
-    border-style: solid;
-    border-radius: 0px 100px 100px 0px;
+.block {
+    background-color: rgb(17, 17, 17);
+    padding: 10px 20px;
+    margin: 10px;
+
+    border-radius: 10px;
 }
 
-.title {
-    color: var(--orange);
-    font-weight: bold;
-    font-size: 12em;
+.sub-block {
+    background-color: var(--background);
+
+    margin: 10px 0px;
 }
 
-p {
-    color: white;
-    font-size: 1.3em;
-}
-
-.inner {
-    background-color: white;
-
+.image {
     width: 100%;
-
-    padding: 0px;
-
-    scrollbar-color: var(--orange) rgb(236, 236, 236);
-    overflow-y: scroll;
-    
-    border-radius: 30px 0px 0px 30px;
-    border-style: solid none solid solid;
-    border-color: var(--background);
-}
-
-.status-text {
-    color: var(--dark-grey);
-    
-    text-align: right;
-    font-weight: bold;
-}
-
-.nav-menu {
-    padding: 5px;
-}
-
-.link-button {
-    background-color: rgb(31, 31, 31);
-
-    color: white;
-    text-align: right;
-    font-size: 1.4em;
-    
-    margin: 5px;
-    width: 100%;
-
-    border-radius: 100px 0px 0px 100px;
-}
-
-.link-button:hover {
-    background-color: var(--orange);
-}
-
-.link-button-focused {
-    background-color: red;
-}
-
-.welcome {
-    background-image: url("image/welcome-tile.png");
-    background-repeat: repeat;
+    border-radius: 10px;
 }

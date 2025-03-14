@@ -6,80 +6,66 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!-- Fill screen -->
-    <div class="d-flex flex-column align-items-center"> 
-
-        <!-- Top Row (Status Bar) -->
-        <div class="row w-100" style="height: 3vh;">
-
-            <!-- Empty -->
-            <div class="col-2 outer">
-                <span></span>
+    <div class="block">
+        <div class="row">
+            <div class="col-2">
+                <img class="image" src="image/profile.png">
             </div>
 
-            <!-- Status -->
-            <div class="col outer">
-                <p class="status-text">04.02.25 // 10:00</p>
+            <div class="col-10">
+                <h1>Hello, I'm Tobey Gronow.</h1>
+                <p>I'm a programmer and game developer. My primary background is in Unity with C#, but I've used all sorts of different language and tools over the years. Very quick to adapt and I love to learn.</p>
             </div>
+        </div>
+    </div>
 
+    <div class="block">
+        <h1>Education</h1>
+        <p>Bachelor of Information and Communications Technology - UniSC</p>
+        <p>Highschool</p>
+    </div>
+
+    <div class="block">
+        <h1>Projects</h1>
+
+        <div class="block sub-block">
+            <h1>The Local</h1>
+            
+            <div class="row">
+                <div class="col-md-4 col-sm-12">
+                    <img class="image" style="margin-bottom: 10px;" src="image/The Local 1.png">
+                    <img class="image" src="image/The Local 2.png">
+                    <img class="image" style="margin-top: 10px;"src="image/The Local 3.png">
+                </div>
+    
+                <div class="col-md-8 col-sm-12">
+                    <p>I've been actively developing The Local since 2023 and it released on Steam this year! After 200+ reviews, it is sitting at 98% positive.</p>
+                    <iframe style="width: 100%; height: 187px" src="https://store.steampowered.com/widget/2560050/The_Local/"></iframe>
+                    <iframe width="100%" height="315" src="https://www.youtube-nocookie.com/embed/tkwC4mzZG0k?si=3L_wS9y3_LG59BjH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
         </div>
 
-        <!-- Middle Row (Main Content) -->
-        <div class="row w-100" style="height: 90vh;">
-
-            <!-- Navigation -->
-            <div class="col-12 col-md-2 outer nav-menu">
-                <div class="d-flex flex-column h-100 justify-content-center align-items-center">
-                    <button onclick="smoothScrollTo('welcome')" type="button" class="btn link-button">Welcome</button>
-                    <button onclick="smoothScrollTo('about-me')" type="button" class="btn link-button">About Me</button>
-                    <button onclick="smoothScrollTo('education')" type="button" class="btn link-button">Education</button>
-                    <button onclick="smoothScrollTo('projects')" type="button" class="btn link-button">Projects</button>
-                    <button onclick="smoothScrollTo('certifications')" type="button" class="btn link-button">Certifications</button>
-                </div>
-            </div>
-
-            <!-- Content -->
-            <div class="col inner">
-                <div id="welcome" class="d-flex flex-column h-100 justify-content-center align-items-center welcome">
-                    <h1>welcome to my website</h1>
-                </div>
-                <div id="about-me" class="d-flex flex-column h-100 justify-content-center align-items-center">
-                    <!-- <iframe src="https://store.steampowered.com/widget/2560050/The_Local/"></iframe> -->
-                    <h1>about me</h1>
-                </div>
-                <div id="education" class="d-flex flex-column h-100 justify-content-center align-items-center">
-                    <h1>education</h1>
-                </div>
-                <div id="projects" class="d-flex flex-column h-100 justify-content-center align-items-center">
-                    <h1>projects</h1>
-                </div>
-                <div id="certifications" class="d-flex flex-column h-100 justify-content-center align-items-center">
-                    <h1>certifications</h1>
-                </div>
-            </div>
-
+        <div class="block sub-block">
+            <h1>3DVis</h1>
+            <p>Developed for UniSC, 3DVis is a tool for the CAVE which is a cutting edge spatialisation environ-... it's a cool room with 80 or so screens lining the walls all around you.
+                The CAVE is used for simulations. For instance, it could be used to train paramedics to perform actions in a stressful environment.
+            </p>
+            <p>Usually you would need to make a whole Unity project to get something on the CAVE. 3DVis is an all in scene builder that runs on the CAVE, allowing for fast iteration.</p>
         </div>
+    </div>
 
-        <!-- Bottom Row (Links) -->
-        <div class="row w-100" style="height: 7vh;">
+    <div class="block">
+        <h1>Certifications</h1>
+    </div>
 
-            <!-- Empty -->
-            <div class="col-2 outer">
-                <span></span>
-            </div>
-
-            <!-- Links -->
-            <div class="col outer">
-                <span></span>
-            </div>
-
-        </div>
-
+    <div class="block">
+        <h1>Contact</h1>
     </div>
 </body>
-
-<script src="index.js"></script> 
