@@ -14,7 +14,13 @@ body {
     margin-left: auto;
 
     color: var(--text);
+    font-size: calc(0.7rem + 0.7vw);
     font-family: "Kanit", serif;
+}
+@media (min-width: 1200px) {
+    body {
+      font-size: 1rem;
+    }
 }
 
 h1 {
@@ -27,7 +33,12 @@ h1::before {
 }
 
 p {
-    font-size: 20px;
+    font-size: calc(0.6rem + 1.1vw);
+}
+@media (min-width: 1200px) {
+    p {
+      font-size: 1.3rem;
+    }
 }
 
 a {
@@ -63,6 +74,27 @@ a {
     text-align: center;
 }
 
+.quote {
+    background-color: var(--block);
+
+    padding: 10px 20px;
+    margin-bottom: 20px;
+
+    border-radius: 0px 10px 10px 0px;
+    border-left: 4px solid var(--accent);
+}
+
+.quote-link {
+    color: var(--accent);
+    font-size: 22px;
+    font-size: calc(0.5rem + 1vw);
+}
+@media (min-width: 1200px) {
+    .quote-link {
+      font-size: 1.2rem;
+    }
+}
+
 .logo {
     width: 100%;
 }
@@ -75,14 +107,29 @@ a {
 .tag {
     background-color: var(--accent);
 
+    display: inline-block;
+    margin-bottom: 3px;
+
     padding: 0px 6px;
 
     color: black;
 
     border-radius: 5px;
+
+    white-space: nowrap;
 }
 
 .icon-link {
-    font-size: 40px;
+    font-size: calc(1rem + 2vw);
     margin-right: 5px;
+    text-decoration: none;
+}
+@media (min-width: 1200px) {
+    .icon-link {
+      font-size: 2.5rem;
+    }
+}
+
+.icon-link:hover {
+    color: var(--accent);
 }
