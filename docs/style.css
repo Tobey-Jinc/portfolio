@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 :root {
-    --background: rgb(24, 24, 24);
+    --background: rgb(24, 22, 18);
+    --text: rgb(214, 214, 214);
+    --block: rgb(17, 17, 17);
+    --accent: rgb(255, 218, 116);
 }
 
 body {
@@ -10,25 +13,76 @@ body {
     margin-right: auto;
     margin-left: auto;
 
-    color: rgb(214, 214, 214);
+    color: var(--text);
     font-family: "Kanit", serif;
 }
 
+h1 {
+    color: var(--accent);
+}
+
+h1::before {
+    content: "| ";
+    color: rgba(59, 59, 59, 0.767);
+}
+
+p {
+    font-size: 20px;
+}
+
+a {
+    color: var(--text);
+}
+
 .block {
-    background-color: rgb(17, 17, 17);
+    background-color: var(--block);
     padding: 10px 20px;
     margin: 10px;
 
     border-radius: 10px;
 }
 
-.sub-block {
+.title-block {
     background-color: var(--background);
 
+    margin-top: 20px;
+}
+
+.sub-block {
+    background-color: var(--background);
+    background: linear-gradient(180deg, var(--background) 70%, var(--block) 100%);
+
     margin: 10px 0px;
+}
+
+.footer {
+    margin-bottom: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+
+    text-align: center;
+}
+
+.logo {
+    width: 100%;
 }
 
 .image {
     width: 100%;
     border-radius: 10px;
+}
+
+.tag {
+    background-color: var(--accent);
+
+    padding: 0px 6px;
+
+    color: black;
+
+    border-radius: 5px;
+}
+
+.icon-link {
+    font-size: 40px;
+    margin-right: 5px;
 }
